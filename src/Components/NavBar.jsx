@@ -37,7 +37,7 @@ const ResponsiveAppBar = () => {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar position="static" sx={{backgroundColor:"#4bb99e77", color:"black"}}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <div style={{ display: "flex", alignItems: "center", gap: 20 }}>
@@ -78,7 +78,7 @@ const ResponsiveAppBar = () => {
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
               sx={{
-                display: { xs: "block", md: "none" },
+                display: { xs: "block",color:"black", md: "none" },
               }}
             >
               {pages.map((page) => (
